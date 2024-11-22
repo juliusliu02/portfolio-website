@@ -3,13 +3,25 @@
 @tailwind utilities;
 
 html {
-  --line-color: #e5e7eb;
+    --line-color: #e5e7eb
 }
 
 html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+    --line-color: rgba(255, 255, 255, .2);
 }
 
 .borderBlack {
-  @apply border border-black/10;
+    @apply border border-black/10;
+}
+
+.text-body {
+    @apply text-gray-950;
+    @apply dark:text-gray-50;
+    @apply dark:text-opacity-90;
+}
+
+.display-link {
+    @apply text-indigo-600;
+    @apply dark:text-indigo-300;
+    @apply after:content-['_↗'];
 }

@@ -1,107 +1,119 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import React from 'react';
+import { CgWorkAlt } from 'react-icons/cg';
+import { FaReact } from 'react-icons/fa';
+import { LuGraduationCap } from 'react-icons/lu';
+import corpcommentImg from '@/public/corpcomment.png';
+import rmtdevImg from '@/public/rmtdev.png';
+import wordanalyticsImg from '@/public/wordanalytics.png';
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: 'Home',
+    hash: '#home',
   },
   {
-    name: "About",
-    hash: "#about",
+    name: 'About',
+    hash: '#about',
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: 'Projects',
+    hash: '#projects',
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: 'Skills',
+    hash: '#skills',
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: 'Experience',
+    hash: '#experience',
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: 'Contact',
+    hash: '#contact',
   },
 ] as const;
 
+export const introText = `**Hello, I'm Julius.** I'm a **Computer Programming** student with **3 years** of experience.
+I strive to create *intuitive and elegant* solutions.
+
+My focus is **React (Next.js)**.`;
+
+export const aboutText = `I started studying programming by taking online courses following
+  [the OSSU curriculum](https://github.com/ossu/computer-science),
+  which equipped me with a solid understanding of object-oriented and
+  functional programming, data structures and algorithm. My favorite part of
+  programming is the problem-solving aspect.
+  I love the idea of divide and conquer, where problems are solved by
+  first being divided into smaller manageable pieces.`;
+
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: 'Graduated bootcamp',
+    location: 'Miami, FL',
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: '2019',
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: 'Front-End Developer',
+    location: 'Orlando, FL',
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: '2019 - 2021',
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: 'Full-Stack Developer',
+    location: 'Houston, TX',
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: '2021 - present',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: 'CorpComment',
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
+    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: 'rmtDev',
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
+    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: 'Word Analytics',
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
+    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Node.js',
+  'Git',
+  'Tailwind',
+  'MongoDB',
+  'Redux',
+  'GraphQL',
+  'Apollo',
+  'Express',
+  'PostgreSQL',
+  'Python',
+  'Django',
+  'Framer Motion',
 ] as const;
