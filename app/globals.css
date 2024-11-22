@@ -25,3 +25,9 @@ html.dark {
     @apply dark:text-indigo-300;
     @apply after:content-['_↗'];
 }
+
+.flowing-redistribution {
+    will-change: tranform, background-color, margin;
+    transition: 300ms background-color, 300ms color, 300ms margin, 300ms transform;
+    transition-timing-function: ease-out;
+}
