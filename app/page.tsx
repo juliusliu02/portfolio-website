@@ -6,12 +6,8 @@ import Skills from '@/components/skills';
 import Experience from '@/components/experience';
 import React from 'react';
 import Contact from '@/components/contact';
-import { headers } from "next/headers";
-import BrowserCheck from "@/components/browser-check";
 
-export default async function Home() {
-  const userAgent = (await headers()).get("user-agent");
-
+export default function Home() {
   return (
     <main className='flex flex-col items-center px-4'>
       <Intro />
@@ -21,7 +17,6 @@ export default async function Home() {
       <Skills />
       <Experience />
       <Contact />
-      { !userAgent?.includes('Chrome') && <BrowserCheck />}
     </main>
   );
 }
