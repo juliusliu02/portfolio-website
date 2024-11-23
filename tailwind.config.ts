@@ -14,6 +14,9 @@ export default {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      transitionProperty: {
+        'custom': 'margin, color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter',
+      }
     },
   },
   plugins: [Typography],

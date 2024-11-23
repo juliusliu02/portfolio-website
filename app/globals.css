@@ -26,8 +26,11 @@ html.dark {
     @apply after:content-['_↗'];
 }
 
-.flowing-redistribution {
-    will-change: tranform, background-color, margin;
-    transition: 300ms background-color, 300ms color, 300ms margin, 300ms transform;
-    transition-timing-function: ease-out;
+@layer utilities {
+    .flowing-redistribution {
+        will-change: margin;
+        @apply sm:hover:mx-2;
+        @apply sm:transition-custom;
+        @apply duration-300;
+    }
 }
