@@ -28,9 +28,9 @@ html.dark {
 
 @layer utilities {
     .flowing-redistribution {
-        will-change: margin;
         @apply sm:hover:mx-2;
         @apply sm:transition-custom;
-        @apply duration-300;
+        @apply sm:duration-300;
+        @apply sm:will-change-transform;
     }
 }

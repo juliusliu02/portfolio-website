@@ -85,7 +85,7 @@ export const projectsData = [
       'An object-oriented implementation of Git. Supports branch merging with automatic conflict resolution.',
     tags: ['Java', 'Serialization', 'Data Structures', 'Error Handling'],
     imageUrl: gitletImg,
-  },
+  }
 ] as const;
 
 export const skillsData = [
@@ -98,7 +98,10 @@ export const skillsData = [
   'Node.js',
   'Git',
   'Tailwind',
+  'shadcn/ui',
   'MongoDB',
+  'Prisma',
+  'Drizzle',
   'Redux',
   'GraphQL',
   'Apollo',
