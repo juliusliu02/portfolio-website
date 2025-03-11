@@ -15,7 +15,7 @@ function Contact() {
     <motion.section
       ref={ref}
       id='contact'
-      className='mb-20 w-[min(100%,38rem)] text-center sm:mb-28'
+      className='mb-20 w-[min(100%,38rem)] text-center sm:mb-28 will-change-transform'
       initial={{
         opacity: 0,
       }}

@@ -24,6 +24,7 @@ function Intro() {
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
+            className="will-change-transform"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -41,7 +42,7 @@ function Intro() {
             />
           </motion.div>
           <motion.span
-            className='absolute bottom-0 right-0 text-4xl'
+            className='absolute bottom-0 right-0 text-4xl will-change-transform'
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -59,6 +60,7 @@ function Intro() {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        className="will-change-transform"
       >
         <Markdown className='text-body mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] prose-p:my-5 sm:text-4xl'>
           {introText}
@@ -66,7 +68,7 @@ function Intro() {
       </motion.h1>
 
       <motion.div
-        className='flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row'
+        className='flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row will-change-transform'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
