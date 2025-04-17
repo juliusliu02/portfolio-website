@@ -24,6 +24,11 @@ html.dark {
     @apply text-indigo-600;
     @apply dark:text-indigo-300;
     @apply after:content-['_↗'];
+    @apply cursor-pointer;
+}
+
+button, a {
+    @apply hover:cursor-pointer;
 }
 
 @layer utilities {

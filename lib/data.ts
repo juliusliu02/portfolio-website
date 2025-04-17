@@ -32,25 +32,25 @@ export const links = [
   },
 ] as const;
 
-export const introText = `**Hello, I'm Julius.** I'm a **Computer Programming** student with **3 years** of experience.
+export const introText = `**Hello, I'm Julius**, an aspiring full-stack developer with **3 years** of academic experience.
 I strive to create *intuitive and elegant solutions*.
 
 My focus is **React (Next.js)**.`;
 
-export const aboutText = `I started studying programming by taking online courses following
+export const aboutText = `
+  I started studying programming by taking online courses in
   [the OSSU curriculum](https://github.com/ossu/computer-science),
   which equipped me with a solid understanding of object-oriented and
-  functional programming, data structures and algorithm. My favorite part of
-  programming is the problem-solving aspect.
-  I love the idea of divide and conquer, where problems are solved by
-  first being divided into smaller manageable pieces.`;
+  functional programming, data structures and algorithm.
+  During my free time, I experiment with cutting-edge technologies and  
+  As a passionate full-stack developer, I advocate for simple, consistent, and functional code.`;
 
 export const experiencesData = [
   {
     title: 'Open Source Society University',
     location: 'Online',
     description:
-      'Where I built solid understanding of programming paradigms, data structures and algorithms, operating systems, and computer networking.',
+      'Curated high-quality courses helped me gain solid understanding of programming paradigms, design patterns, data structures and algorithms.',
     icon: React.createElement(LuGraduationCap),
     date: '2022 – 2024',
   },
@@ -58,9 +58,9 @@ export const experiencesData = [
     title: 'Computer Programming Diploma',
     location: 'Algonquin College, Ottawa, ON',
     description:
-      "I'm now a Computer Programming student at Algonquin College. My tech stack is React, Next.js, and MongoDB. I'm open to co-op opportunities.",
+      "I'm studying Computer Programming, acquiring hands-on experience with database management, operating systems, and networking. I'm looking for co-op opportunities.",
     icon: React.createElement(FaReact),
-    date: '2024 - present',
+    date: '2024 – present',
   },
 ] as const;
 
@@ -94,9 +94,8 @@ export const skillsData = [
   'JavaScript',
   'TypeScript',
   'React',
-  'Next.js',
   'Node.js',
-  'Git',
+  'Next.js',
   'Tailwind',
   'shadcn/ui',
   'MongoDB',
@@ -106,8 +105,9 @@ export const skillsData = [
   'GraphQL',
   'Apollo',
   'Express',
+  'Hono',
   'PostgreSQL',
-  'Python',
   'Django',
+  'Git',
   'Framer Motion',
 ] as const;

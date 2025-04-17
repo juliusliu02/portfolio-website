@@ -102,7 +102,7 @@ function Intro() {
           <BsLinkedin />
         </a>
         <a
-          href='https://github.com/juliusliu02'
+          href='https://www.linkedin.com/in/jiajun-liu-16286b327'
           target='_blank'
           rel='noopener noreferrer'
           className='borderBlack sm:flowing-redistribution flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 outline-none transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60'
