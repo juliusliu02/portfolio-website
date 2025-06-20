@@ -43,7 +43,7 @@ export const aboutText = `
   which equipped me with a solid understanding of object-oriented and
   functional programming, data structures and algorithm.
   During my free time, I experiment with cutting-edge technologies and  
-  As a passionate full-stack developer, I advocate for simple, consistent, and functional code.`;
+  as a passionate full-stack developer, I advocate for simple, consistent, and functional code.`;
 
 export const experiencesData = [
   {
