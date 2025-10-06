@@ -7,6 +7,7 @@ import { useSectionInView } from '@/lib/hooks';
 import { sendEmail } from '@/actions/send-email';
 import SubmitButton from '@/components/submit-button';
 import toast from 'react-hot-toast';
+import Script from "next/script";
 
 function Contact() {
   const { ref } = useSectionInView('Contact');
@@ -68,7 +69,19 @@ function Contact() {
           placeholder='Your message'
           required
         />
+        <div className={"flex gap-8 items-center"}>
         <SubmitButton />
+          <Script
+            src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+            async
+            defer
+          ></Script>
+          <div
+            className="cf-turnstile mx-0"
+            data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+            data-callback="javascriptCallback"
+          ></div>
+        </div>
       </form>
     </motion.section>
   );
