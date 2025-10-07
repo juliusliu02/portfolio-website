@@ -1,40 +1,70 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-html {
-    --line-color: #e5e7eb
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --transition-property-custom:
+    margin, color, background-color, border-color, text-decoration-color, fill,
+    stroke, opacity, box-shadow, transform, filter, backdrop-filter;
 }
 
-html.dark {
-    --line-color: rgba(255, 255, 255, .2);
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-.borderBlack {
+@utility flowing-redistribution {
+  @apply sm:hover:mx-2;
+  @apply sm:transition-custom;
+  @apply sm:duration-300;
+  @apply sm:will-change-transform;
+}
+
+@layer utilities {
+  html {
+    --line-color: #e5e7eb;
+  }
+
+  html.dark {
+    --line-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .borderBlack {
     @apply border border-black/10;
-}
+  }
 
-.text-body {
+  .text-body {
     @apply text-gray-950;
     @apply dark:text-gray-50/90;
-}
+  }
 
-.display-link {
+  .display-link {
     @apply text-indigo-600;
     @apply dark:text-indigo-300;
     @apply after:content-['_↗'];
     @apply cursor-pointer;
-}
+  }
 
-button, a {
+  button,
+  a {
     @apply hover:cursor-pointer;
-}
-
-@layer utilities {
-    .flowing-redistribution {
-        @apply sm:hover:mx-2;
-        @apply sm:transition-custom;
-        @apply sm:duration-300;
-        @apply sm:will-change-transform;
-    }
+  }
 }

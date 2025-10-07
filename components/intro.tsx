@@ -19,7 +19,7 @@ function Intro() {
     <section
       ref={ref}
       id='home'
-      className='mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0'
+      className='mb-28 max-w-200 scroll-mt-400 text-center sm:mb-0'
     >
       <div className='flex items-center justify-center'>
         <div className='relative'>
@@ -62,7 +62,7 @@ function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="will-change-transform"
       >
-        <Markdown className='text-body mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] prose-p:my-5 sm:text-4xl'>
+        <Markdown className='text-body mb-10 mt-4 px-4 text-2xl font-medium leading-normal! prose-p:my-5 sm:text-4xl'>
           {introText}
         </Markdown>
       </motion.h1>
@@ -77,7 +77,7 @@ function Intro() {
       >
         <Link
           href='#contact'
-          className='group sm:flowing-redistribution transition flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105'
+          className='group sm:flowing-redistribution transition flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-hidden hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105'
           onClick={() => {
             setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
@@ -89,7 +89,7 @@ function Intro() {
         <a
           href='/CV.pdf'
           download
-          className='borderBlack sm:flowing-redistribution flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10'
+          className='borderBlack sm:flowing-redistribution flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-hidden transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10'
         >
           Résumé <HiDownload className='opacity-60' />
         </a>
@@ -97,7 +97,7 @@ function Intro() {
           href='https://www.linkedin.com/in/julius-liu'
           target='_blank'
           rel='noopener noreferrer'
-          className='borderBlack sm:flowing-redistribution flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 outline-none transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60'
+          className='borderBlack sm:flowing-redistribution flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 outline-hidden transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60'
         >
           <BsLinkedin />
         </a>
@@ -105,7 +105,7 @@ function Intro() {
           href='https://github.com/juliusliu02'
           target='_blank'
           rel='noopener noreferrer'
-          className='borderBlack sm:flowing-redistribution flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 outline-none transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60'
+          className='borderBlack sm:flowing-redistribution flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 outline-hidden transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60'
         >
           <BsGithub />
         </a>

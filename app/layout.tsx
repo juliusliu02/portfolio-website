@@ -19,12 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className='!scroll-smooth'>
+    <html lang='en' className='scroll-smooth!'>
       <body
         className={`relative bg-gray-50 pt-28 text-gray-950 sm:pt-36 dark:bg-gray-900 dark:text-gray-50/90`}
       >
-        <div className='absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]'></div>
-        <div className='absolute left-[-35rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]'></div>
+        <div className='absolute right-44 -top-24 -z-10 h-125 w-125 rounded-full bg-[#fbe2e3] blur-[10rem] sm:w-275 dark:bg-[#946263]'></div>
+        <div className='absolute -left-140 -top-4 -z-10 h-125 w-200 rounded-full bg-[#dbd7fb] blur-[10rem] sm:w-275 md:-left-132 lg:-left-112 xl:-left-60 2xl:-left-20 dark:bg-[#676394]'></div>
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
