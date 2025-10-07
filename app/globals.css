@@ -16,8 +16,7 @@ html.dark {
 
 .text-body {
     @apply text-gray-950;
-    @apply dark:text-gray-50;
-    @apply dark:text-opacity-90;
+    @apply dark:text-gray-50/90;
 }
 
 .display-link {
