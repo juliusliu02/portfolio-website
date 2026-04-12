@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
+import { LuBriefcaseBusiness, LuGraduationCap } from 'react-icons/lu';
 import gitletImg from '@/public/gitlet.png';
-import morphImg from '@/public/morph.png';
-import ibkrStatementParserImg from '@/public/ibkrStatementParser.png';
+import expresImg from '@/public/expres.png';
+import groveImg from '@/public/grove.png';
 
 export const links = [
   {
@@ -32,18 +31,15 @@ export const links = [
   },
 ] as const;
 
-export const introText = `**Hello, I'm Julius**, an aspiring full-stack developer with **3 years** of academic experience.
-I strive to create *intuitive and elegant solutions*.
-
-My focus is **React (Next.js)**.`;
+export const introText = `**Hello, I'm Julius**, a full-stack developer co-op currently building network automation software at **Nokia**.`;
 
 export const aboutText = `
-  I started studying programming by taking online courses in
-  [the OSSU curriculum](https://github.com/ossu/computer-science),
-  which equipped me with a solid understanding of object-oriented and
-  functional programming, data structures and algorithm.
-  During my free time, I experiment with cutting-edge technologies and  
-  as a passionate full-stack developer, I advocate for simple, consistent, and functional code.`;
+  I'm a software developer co-op at Nokia, where I build full-stack features
+  for a distributed network automation platform.
+  Before that, I studied through
+  [the OSSU curriculum](https://github.com/ossu/computer-science)
+  and am completing my Computer Programming diploma at Algonquin College (GPA: 3.99/4.0).
+  I enjoy building with serverless platforms and advocate for simple, consistent, and functional code.`;
 
 export const experiencesData = [
   {
@@ -58,26 +54,38 @@ export const experiencesData = [
     title: 'Computer Programming Diploma',
     location: 'Algonquin College, Ottawa, ON',
     description:
-      "I'm studying Computer Programming, acquiring hands-on experience with database management, operating systems, and networking. I'm looking for co-op opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2024 – present',
+      "GPA: 3.99/4.0. Dean's Honour List.",
+    icon: React.createElement(LuGraduationCap),
+    date: '2024 – 2026',
+  },
+  {
+    title: 'Software Developer Co-op',
+    location: 'Nokia, Ottawa, ON',
+    description: [
+      'Delivered end-to-end features across frontend, backend, and infrastructure for a container-based network automation platform.',
+      'Designed cross-service communication using WebSockets, reverse proxy configuration, and async backend handling.',
+      'Deployed core services on Kubernetes (GKE) with secure connectivity and external access.',
+      'Built a real-time SSH console for containerized environments, enabling interactive remote access through the browser via a bastion architecture.',
+    ],
+    icon: React.createElement(LuBriefcaseBusiness),
+    date: '2025 – present',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: 'Morph',
+    title: 'Exprès',
     description:
-      'A smart AI-powered essay editor. Users can get polished essays following a multi-step editing process with just a few clicks.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: morphImg,
+      'Serverless AI writing feedback platform with revision-aware analysis, SSE streaming, and AI observability.',
+    tags: ['React', 'TypeScript', 'Cloudflare Workers', 'Hono', 'Drizzle'],
+    imageUrl: expresImg,
   },
   {
-    title: 'IBKR Statement Parser',
+    title: 'Grove',
     description:
-      `Automated conversion tool from IBKR's export to Portfolio Profit-compatible CSV format.`,
-    tags: ['Go', 'Abstract Data Type', 'Functional Programming', 'File I/O'],
-    imageUrl: ibkrStatementParserImg,
+      'Personal productivity suite that captures and connects thoughts with AI-powered generation.',
+    tags: ['Svelte', 'TypeScript', 'Cloudflare Workers', 'Drizzle', 'Better Auth'],
+    imageUrl: groveImg,
   },
   {
     title: 'Gitlet',
@@ -89,25 +97,26 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
   'TypeScript',
   'React',
-  'Node.js',
+  'Python',
+  'Svelte',
   'Next.js',
-  'Tailwind',
-  'shadcn/ui',
-  'MongoDB',
-  'Prisma',
-  'Drizzle',
   'Redux',
-  'GraphQL',
-  'Apollo',
+  'Tailwind',
+  'FastAPI',
+  'Node.js',
   'Express',
   'Hono',
   'PostgreSQL',
-  'Django',
+  'MongoDB',
+  'Drizzle',
+  'Docker',
+  'Kubernetes',
+  'Cloudflare Workers',
+  'WebSockets',
   'Git',
-  'Framer Motion',
+  'GitHub Actions',
+  'Playwright',
+  'Vitest',
 ] as const;

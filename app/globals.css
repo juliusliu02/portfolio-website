@@ -9,8 +9,8 @@
   --color-foreground: var(--foreground);
 
   --transition-property-custom:
-    margin, color, background-color, border-color, text-decoration-color, fill,
-    stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    margin, scale, color, background-color, border-color, text-decoration-color,
+    fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
 }
 
 /*

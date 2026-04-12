@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Markdown from 'react-markdown';
-import Link from 'next/link';
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from '@/lib/hooks';
@@ -75,9 +74,9 @@ function Intro() {
           delay: 0.1,
         }}
       >
-        <Link
+        <a
           href='#contact'
-          className='group sm:flowing-redistribution transition flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-hidden hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105'
+          className='group sm:flowing-redistribution flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-hidden hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105'
           onClick={() => {
             setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
@@ -85,7 +84,7 @@ function Intro() {
         >
           Contact me{' '}
           <BsArrowRight className='opacity-70 transition' />
-        </Link>
+        </a>
         <a
           href='/CV.pdf'
           download
