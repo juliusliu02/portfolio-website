@@ -1,122 +1,110 @@
-import React from 'react';
-import { LuBriefcaseBusiness, LuGraduationCap } from 'react-icons/lu';
-import gitletImg from '@/public/gitlet.png';
-import expresImg from '@/public/expres.png';
-import groveImg from '@/public/grove.png';
+import React from "react";
+import { LuBriefcaseBusiness, LuGraduationCap } from "react-icons/lu";
+import containerlabImg from "@/public/containerlab.png";
+import expresImg from "@/public/expres.png";
+import mrAgentImg from "@/public/mr-agent.png";
 
 export const links = [
   {
-    name: 'Home',
-    hash: '#home',
+    name: "Home",
+    hash: "#home",
   },
   {
-    name: 'About',
-    hash: '#about',
+    name: "About",
+    hash: "#about",
   },
   {
-    name: 'Projects',
-    hash: '#projects',
+    name: "Projects",
+    hash: "#projects",
   },
   {
-    name: 'Skills',
-    hash: '#skills',
+    name: "Skills",
+    hash: "#skills",
   },
   {
-    name: 'Experience',
-    hash: '#experience',
+    name: "Experience",
+    hash: "#experience",
   },
   {
-    name: 'Contact',
-    hash: '#contact',
+    name: "Contact",
+    hash: "#contact",
   },
 ] as const;
 
-export const introText = `**Hello, I'm Julius**, a full-stack developer co-op currently building network automation software at **Nokia**.`;
+export const introText = `**Hello, I'm Julius**, a software developer on co-op at **Nokia**, focused on **TypeScript/React, Python, and AI agents**.`;
 
 export const aboutText = `
-  I'm a software developer co-op at Nokia, where I build full-stack features
-  for a distributed network automation platform.
-  Before that, I studied through
-  [the OSSU curriculum](https://github.com/ossu/computer-science)
-  and am completing my Computer Programming diploma at Algonquin College (GPA: 3.99/4.0).
-  I enjoy building with serverless platforms and advocate for simple, consistent, and functional code.`;
+  I'm a software developer with two years writing TypeScript and Python, currently on co-op at Nokia
+  where I ship end-to-end features across React, FastAPI, and Kubernetes — from browser UI to containerized services.
+  Lately I've been building AI agents and evaluation pipelines. Outside work, I build tools for my own workflow — most of my projects started as something I wished existed.`;
 
 export const experiencesData = [
   {
-    title: 'Open Source Society University',
-    location: 'Online',
-    description:
-      'Curated high-quality courses helped me gain solid understanding of programming paradigms, design patterns, data structures and algorithms.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2022 – 2024',
-  },
-  {
-    title: 'Computer Programming Diploma',
-    location: 'Algonquin College, Ottawa, ON',
-    description:
-      "GPA: 3.99/4.0. Dean's Honour List.",
-    icon: React.createElement(LuGraduationCap),
-    date: '2024 – 2026',
-  },
-  {
-    title: 'Software Developer Co-op',
-    location: 'Nokia, Ottawa, ON',
+    title: "Software Developer Co-op",
+    location: "Nokia, Ottawa, ON",
     description: [
-      'Delivered end-to-end features across frontend, backend, and infrastructure for a container-based network automation platform.',
-      'Designed cross-service communication using WebSockets, reverse proxy configuration, and async backend handling.',
-      'Deployed core services on Kubernetes (GKE) with secure connectivity and external access.',
-      'Built a real-time SSH console for containerized environments, enabling interactive remote access through the browser via a bastion architecture.',
+      "Delivered end-to-end functionality across a distributed system, designing FastAPI backend services and APIs with comprehensive unit and E2E test coverage.",
+      "Built a WebSocket-based SSH console for Kubernetes containers, enabling real-time terminal access and SFTP through a bastion architecture.",
+      "Led improvements to frontend accessibility and testability by introducing ARIA labels and semantic attributes, enabling Playwright-based E2E testing and improving selector reliability.",
+      "Implemented online and offline evaluation pipelines for AI agents using Langfuse, integrating dataset-driven testing and CI workflows to evaluate and improve LLM-based agent performance.",
     ],
     icon: React.createElement(LuBriefcaseBusiness),
-    date: '2025 – present',
+    date: "2025 – present",
+  },
+  {
+    title: "Computer Programming Diploma",
+    location: "Algonquin College, Ottawa, ON",
+    description: "GPA: 3.99/4.0. Dean's Honour List.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024 – 2026",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: 'Exprès',
+    title: "Exprès",
     description:
-      'Serverless AI writing feedback platform with revision-aware analysis, SSE streaming, and AI observability.',
-    tags: ['React', 'TypeScript', 'Cloudflare Workers', 'Hono', 'Drizzle'],
+      "Serverless AI writing feedback platform with revision-aware analysis, SSE streaming, and AI observability.",
+    tags: ["React", "TypeScript", "Cloudflare Workers", "Hono", "Drizzle"],
     imageUrl: expresImg,
   },
   {
-    title: 'Grove',
+    title: "vscode-containerlab",
     description:
-      'Personal productivity suite that captures and connects thoughts with AI-powered generation.',
-    tags: ['Svelte', 'TypeScript', 'Cloudflare Workers', 'Drizzle', 'Better Auth'],
-    imageUrl: groveImg,
+      "Open-source VS Code extension for network labs — contributed a link impairment panel and refactored the webview messaging layer for type safety.",
+    tags: ["TypeScript", "React", "VS Code Extension", "Open Source"],
+    imageUrl: containerlabImg,
   },
   {
-    title: 'Gitlet',
+    title: "MR Review Agent",
     description:
-      'An object-oriented implementation of Git. Supports branch merging with automatic conflict resolution.',
-    tags: ['Java', 'Serialization', 'Data Structures', 'Error Handling'],
-    imageUrl: gitletImg,
-  }
+      "Multi-agent system that reviews GitLab merge requests via a custom MCP server exposing diffs, metadata, and pipeline context.",
+    tags: ["Python", "Google ADK", "MCP", "Docker"],
+    imageUrl: mrAgentImg,
+  },
 ] as const;
 
 export const skillsData = [
-  'TypeScript',
-  'React',
-  'Python',
-  'Svelte',
-  'Next.js',
-  'Redux',
-  'Tailwind',
-  'FastAPI',
-  'Node.js',
-  'Express',
-  'Hono',
-  'PostgreSQL',
-  'MongoDB',
-  'Drizzle',
-  'Docker',
-  'Kubernetes',
-  'Cloudflare Workers',
-  'WebSockets',
-  'Git',
-  'GitHub Actions',
-  'Playwright',
-  'Vitest',
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind",
+  "Python",
+  "FastAPI",
+  "Node.js",
+  "Hono",
+  "REST APIs",
+  "PostgreSQL",
+  "Drizzle",
+  "Langfuse",
+  "MCP",
+  "Google ADK",
+  "Vitest",
+  "Playwright",
+  "Docker",
+  "Kubernetes",
+  "Cloudflare Workers",
+  "GCP",
+  "CI/CD",
+  "Git",
 ] as const;
